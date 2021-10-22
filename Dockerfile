@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 8000
 
-ENTRYPOINT ["chmod", "+x", "/django.sh"]      
+ENTRYPOINT ["sh", "/django.sh"]      
