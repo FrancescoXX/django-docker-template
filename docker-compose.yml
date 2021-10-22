@@ -7,10 +7,10 @@ services:
     build: .
     environment:
       - DB_DRIVER=django.db.backends.postgresql
-      - PG_NAME=postgres
+      - PG_DATABASE=postgres
       - PG_USER=postgres
       - PG_PASSWORD=postgres
-      - PG_HOST=
+      - PG_HOST=database-1.c9nq6suhmqou.us-east-1.rds.amazonaws.com
       - PG_PORT=5432
     ports:
       - "8000:8000"
