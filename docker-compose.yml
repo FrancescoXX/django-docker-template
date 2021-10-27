@@ -10,7 +10,7 @@ services:
       - PG_DATABASE=postgres
       - PG_USER=postgres
       - PG_PASSWORD=postgres
-      - PG_HOST=database-1.c9nq6suhmqou.us-east-1.rds.amazonaws.com
+      - PG_HOST=db
       - PG_PORT=5432
     ports:
       - "80:80"
