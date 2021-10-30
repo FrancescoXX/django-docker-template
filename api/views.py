@@ -27,7 +27,6 @@ def itemDetail(request, pk):
 	serializer = ItemSerializer(items, many=False)
 	return Response(serializer.data)
 
-
 @api_view(['POST'])
 def itemCreate(request):
 	serializer = ItemSerializer(data=request.data)
@@ -42,7 +41,6 @@ def itemUpdate(request, pk):
 	if serializer.is_valid():
 		serializer.save()
 	return Response(serializer.data)
-
 
 @api_view(['DELETE'])
 def itemDelete(request, pk):
